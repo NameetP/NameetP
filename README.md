@@ -1,94 +1,32 @@
-# Factory OS v1 - Outreach & Lead Qualification Agent
+### Hi, I'm Nameet
 
-> Turn any lead list into revenue — automatically.
+Building AI products at the intersection of finance and technology.
 
-Factory OS finds decision-makers, researches their companies, writes personalized outreach, and qualifies every lead. All in 30 seconds.
+---
 
-## Features
+#### What I'm working on
 
-- **Autonomous Research**: Crawls websites, extracts positioning, identifies ICP fit
-- **Personalized Outreach**: Generates tailored emails, LinkedIn DMs, and call scripts
-- **Lead Qualification**: A/B/C scoring, predicted objections, recommended next steps
-- **Multi-Channel**: Email, LinkedIn, phone — all covered
-- **CRM Integration**: Push to HubSpot, Pipedrive, Gmail, Outlook
-- **Real-Time Processing**: Watch agents work in real-time
+**[DESTA.ai](https://desta.ai)** — AI-powered investment research platform. Beacon Intelligence scans markets, analyzes companies, and surfaces opportunities so investors can focus on decisions, not data gathering.
 
-## Quick Start
+**[pdfmux](https://github.com/NameetP/pdfmux)** — Open source PDF extraction that checks its own work. Extracts, audits every page, re-extracts the ones that came out wrong. Python API + CLI + MCP server. Built for LLM pipelines.
 
 ```bash
-# Install dependencies
-npm install
-
-# Set up environment
-cp .env.example .env
-# Edit .env with your keys
-
-# Run database migrations
-npm run db:generate
-npm run db:migrate
-
-# Start development server
-npm run dev
+pip install pdfmux
 ```
 
-Visit http://localhost:3000
+```python
+import pdfmux
 
-## Tech Stack
-
-- **Frontend**: Next.js 14, React, TypeScript, Tailwind CSS
-- **Backend**: Next.js API Routes, Drizzle ORM
-- **Database**: PostgreSQL + pgvector (Supabase)
-- **Queue**: BullMQ + Redis
-- **AI**: Anthropic Claude, OpenAI
-- **Auth**: NextAuth.js (magic links)
-- **Payments**: Stripe
-
-## Project Structure
-
-```
-factory-os/
-├── app/                    # Next.js app directory
-│   ├── (auth)/            # Auth pages
-│   ├── (dashboard)/       # Main app pages
-│   ├── api/               # API routes
-│   └── layout.tsx         # Root layout
-├── components/            # React components
-│   ├── ui/               # shadcn/ui components
-│   └── ...               # Feature components
-├── lib/                   # Core libraries
-│   ├── agents/           # AI agents
-│   ├── db/               # Database & schema
-│   ├── queue/            # Background jobs
-│   └── utils/            # Utilities
-├── types/                 # TypeScript types
-└── public/               # Static assets
+text = pdfmux.extract_text("report.pdf")
+chunks = pdfmux.load_llm_context("report.pdf")
 ```
 
-## Development Roadmap
+---
 
-### Week 1 - Core Agent + Backend
-- [x] Foundation setup
-- [ ] Lead ingestion layer
-- [ ] Research agent
-- [ ] Outreach agent
-- [ ] Qualification agent
-- [ ] UI v1
+#### Tech I work with
 
-### Week 2 - Polishing + Launch
-- [ ] Auto-sequence module
-- [ ] Email/CRM integrations
-- [ ] Billing + paywalls
-- [ ] Landing page
-- [ ] Beta testing
-- [ ] Ship
+Python, TypeScript, FastAPI, Next.js, PostgreSQL, AI/ML pipelines
 
-## Pricing
+---
 
-- **Free**: 20 leads/month, export only
-- **Pro**: $39/mo, 500 leads, auto-send, integrations
-- **Growth**: $99/mo, 2,500 leads, multi-channel
-- **Scale**: $299/mo, unlimited, team features
-
-## License
-
-Proprietary - All rights reserved
+<a href="https://desta.ai">desta.ai</a> · <a href="https://pdfmux.com">pdfmux.com</a>
